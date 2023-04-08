@@ -1,0 +1,317 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+}
+
+
+header {
+	background: #752d28;
+	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 6px;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.logo-title {
+	cursor: pointer;
+	transition: all .5s ease 0s;
+}
+
+.logo:hover {
+	color: #66aee9;
+	transform: rotate(2deg);
+}
+
+.btn-cta {
+	margin-right: 10px;
+	border: none;
+	font-size: 20px;
+	padding: 6px 12px;
+	background: #019622;
+	color: #ffffff;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+nav ul{
+	display: flex;
+	padding: 20px;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #8bf1ff;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 28px;
+	font-weight: bolder;
+}
+
+.img-foto {
+	width: 500px;
+	height: auto;
+	padding: 10px;
+	max-width: 500px;
+}
+
+.parallax {
+	background-image: url('3.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	
+}
+
+.parallaxedit {
+	background-image: url('2.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	
+}
+
+.parallaxmanage {
+	background-image: url('4.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	
+}
+
+.parallaxdash {
+	background-image: url('6.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	
+}
+
+.parallaxlogin {
+	background-image: url('1.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	
+}
+
+.tentang {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background:#752d28;
+	color: #ffffff ;
+	padding: 40px;
+}
+
+.mt-10 {
+	margin-top: 20px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.card-item {
+	text-align: center;
+	width: 100%;
+	min-height: 300x;
+	max-height: 500px;
+	background: #f7f7f7;
+    opacity:0.9;
+	color: #222;
+	padding: 50px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.icon {
+	width: 75px;
+	height: 75px;
+	margin: 10px;
+	padding: 4px;
+}
+
+.wisata {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	padding: 4px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #1A2238;
+	color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		opacity: 0.9;
+	}
+	
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto {
+		padding: 0;
+	}
+	
+	nav {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #1A2238;
+		z-index: 9;
+	}
+	
+	footer {
+		margin-bottom: 70px;
+		margin-top: 70px;
+	}
+}
+
+/* styling untuk tombol buka modal */
+.open-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  /* styling untuk modal */
+  .modal {
+    display: none; /* jangan tampilkan modal secara default */
+    position: fixed; /* posisikan modal secara absolut */
+    z-index: 1; /* letakkan modal di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* aktifkan scrolling jika konten melebihi viewport */
+    background-color: rgba(0,0,0,0.4); /* buat efek gelap pada background */
+  }
+  
+  /* styling untuk konten modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* posisi konten modal di tengah layar */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* atur lebar konten modal */
+  }
+  
+  /* styling untuk tombol close */
+  .close-button {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  
